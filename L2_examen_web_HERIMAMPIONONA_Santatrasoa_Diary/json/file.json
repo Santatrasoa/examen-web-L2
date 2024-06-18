@@ -1,0 +1,30 @@
+[
+    {
+        "id"                : 1,
+        "title"             : "1984",
+        "author"            : "George Orwell",
+        "isbn"              : "978-2-07-036822-8",
+        "editeur"           : "Gallimard",
+        "dataPublication"   : "1949",
+        "genre"             : "dystopie",
+        "resumer"           : "Un homme lutte contre un regime totalitaire oppressif dans un monde dystopique.",
+        "language"          : "Français",
+        "nombrePage"        : 368,
+        "etat"              : "endommagé",
+        "emplacement"       : "Réserves"
+    },
+    {
+        "id"                : 2,
+        "title"             : "1984",
+        "author"            : "George Orwell",
+        "isbn"              : "978-2-07-036822-8",
+        "editeur"           : "Gallimard",
+        "dataPublication"   : "1949",
+        "genre"             : "dystopie",
+        "resumer"           : "Un homme lutte contre un regime totalitaire oppressif dans un monde dystopique.",
+        "language"          : "Français",
+        "nombrePage"        : 368,
+        "etat"              : "endommagé",
+        "emplacement"       : "Réserves"
+    }
+]

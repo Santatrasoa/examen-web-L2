@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Book</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="title">
+                <h1>MyBiblio</h1>
+            </div>
+            <ul class="nav-bar">
+                <!-- <li><a href="#">Home</a></li> -->
+                <li><a href="#form">Add</a></li>
+                <li><a href="#list">List</a></li>
+                <li>
+                    <form class="search-form">
+                        <input type="search" id="search_input" placeholder="Rechercher ..." required>
+                        <button id="sbmt" type="submit">Chercher</button>
+                    </form>
+                </li>
+            </ul>
+            <div class="menu">
+                menu
+            </div>
+        </nav>
+
+    </header>
+        <main>
+            <H1 id="form">Ajouter un nouvel livre</H1>
+            <form action="" id="myForm" class="ct-form">
+                <input type="text" id="title" placeholder="Titre" required>
+                <input type="text" id="author" placeholder="Auteur" required>
+                <input type="text" name="editor" id="editor" placeholder="Editeur" required>
+                <input type="text" id="isbn" placeholder="isbn" required>
+                <input type="date" name="date" id="date" placeholder="Date de publication" required>
+                <select name="" id="genre">
+                    <option value="fiction">Seance Fiction</option>
+                    <option value="dessiner">Bande dessiner</option>
+                    <option value="romance">Romance</option>
+                    <option value="dystopie">Dystopie</option>
+                </select>
+
+                <input type="text" name="" id="resume" placeholder="Resume" required>
+                <select name="langage" id="language">
+                    <option value="french">Français</option>
+                    <option value="english">Anglais</option>
+                </select>
+                <input type="number" name="" min="10" id="pagenumber" placeholder="Nombre de page" required>
+
+                <section class="disp">
+                    <label>disponinilité</label>
+                    <section class="ct-check" id="availability">
+                        <label for="true">True</label>
+                        <input type="radio" name="availability" id="true" checked>
+                    </section>
+                    <section class="ct-check">
+                        <label for="false">False</label>
+                        <input type="radio" name="availability" id="false">
+                    </section>
+                 </section>
+                 <section class="disp">
+                    <label>Etat</label>
+                    <section class="ct-check">
+                        <label for="correct">Bon Etat</label>
+                        <input type="radio" name="condition" id="correct" checked>
+                    </section>
+                    <section class="ct-check">
+                        <label for="false">Endommagé</label>
+                        <input type="radio" name="condition" id="false">
+                    </section>
+                 </section>
+                <input type="text" name="" id="location" required placeholder="Emplacement">
+
+
+                <div>
+                    <button type="reset" id="reset">Reset All</button>
+                    <button type="submit" id="submit">Add</button>
+                </div>
+            </form>
+
+
+            <h1 id="list">
+                Lister les livres disponinible
+            </h1>
+
+            <div class="select-trie">
+                <label for="trier">Trier par :</label>
+                <select name="trier" id="trier">
+                    <option value="titre">Auteur</option>
+                    <option value="titre">Titre</option>
+                    <option value="titre">Editeur</option>
+                    <option value="titre">Date de publication</option>
+                </select>
+            </div>
+
+            <div class="ct-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Titre</th>
+                            <th>Auteur</th>
+                            <th>Editeur</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody class="tbody">
+
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="modal">
+                <div class="modal-content">
+                    <span class="close cls">&times;</span>
+                    <h2 class="modal-title"></h2>
+                    <p class="modal-author"></p>
+                    <p class="modal-editeur"></p>
+                    <p class="modal-isbn"></p>
+                    <p class="modal-date"></p>
+                    <p class="modal-genre"></p>
+                    <p class="modal-resume"></p>
+                    <p class="modal-language"></p>
+                    <p class="modal-pagenumber"></p>
+                    <p class="modal-availability"></p>
+                    <p class="modal-condition"></p>
+                </div>
+            </div>
+
+            <div class="ct-input-search">
+                <span class="close cl">&times;</span>
+                
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Titre</th>
+                            <th>Auteur</th>
+                            <th>Editeur</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody class="tbody-search">
+
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    <script src="js/script.js"></script>
+    <script src="js/list.js"></script>
+</body>
+</html>

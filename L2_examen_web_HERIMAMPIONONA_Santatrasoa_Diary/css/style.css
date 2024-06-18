@@ -1,0 +1,434 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+    text-decoration: none;
+    list-style: none;
+}
+
+header nav {
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    background-color: #ffffffd8;
+    box-shadow: 0px 0px 1px #000;
+}
+
+header nav .title {
+    /* width: 20%; */
+    display: flex;
+    justify-content: end;
+}
+
+.title h1 {
+    font-weight: lighter;
+    font-size: 30px;
+}
+
+ .nav-bar {
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav-bar a{
+    font-size: 17px;
+    color: #000;
+}
+
+.menu {
+    display: none;
+}
+
+main {
+    margin-top: 100px;
+}
+    
+main h1 {
+    text-align: center;
+    font-weight: lighter;
+    font-size: 30px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.ct-form {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    margin-left: 129px;
+}
+
+.ct-form input, select{
+    width: 80%;
+    padding: 16px 32px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+    outline: none;
+    border: 1px solid #afafaf;
+    transition: all 0.3s;
+    font-size: 17px;
+}
+
+.ct-form input:focus {
+    border: 1px solid #000;
+}
+
+.ct-form div {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ct-form div button {
+    padding: 16px 32px;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#submit {
+    background-color: #000;
+    color: #fff;
+}
+
+#reset {
+    background-color: #f00;
+    color: #fff;
+}
+
+.disp {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    font-size: 17px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.ct-check {
+    width: 20%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.ct-check label,
+.ct-check input {
+    width: 50%;
+}
+
+.select-trie {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.select-trie label {
+    width: 20%;
+    font-size: 20px;
+}
+
+.select-trie select {
+    width: 50%;
+}
+
+.ct-table {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+table {
+    text-align: center;
+    width: 80%;
+    border-collapse: collapse;
+    margin-bottom: 50px;
+}
+
+table thead{
+    width: 100%;
+    padding: 10px;
+}
+
+tr {
+    width: 100%;
+}
+
+th, td {
+    padding: 15px;
+    font-size: 16px;
+    width: 25%;
+    border-bottom: 1px solid #000;
+}
+
+table button {
+    padding: 10px;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    font-size: 12px;
+}
+
+.btn-primary {
+    background-color: #000;
+    color: #fff;
+}
+
+.btn-danger {
+    background-color: #f00;
+    color: #fff;
+}
+
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    z-index: 100000;
+}
+
+.ct-input-search{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: #ffffffb6;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999;
+}
+
+
+.modal-content {
+    background-color: #000000b0;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    position: relative;
+    border-radius: 10px;
+    
+}
+
+.modal-title {
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.modal-author,
+.modal-editeur,
+.modal-isbn,
+.modal-date,
+.modal-genre,
+.modal-resume,
+.modal-language,
+.modal-pagenumber,
+.modal-availability,
+.modal-condition {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.flex {
+    display: flex;
+    width: 100%;
+}
+
+.cl {
+    background-color: #000;
+}
+
+.ct-more {
+    width: 60%;
+}
+
+.title-more {
+    color: #dddddd;
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: start;
+    letter-spacing: 2px;
+    width: 40%;
+
+}
+
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    cursor: pointer;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #fff;
+    gap: 10px;
+}
+
+.search-form input[type="search"] {
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border: 1px solid #000;
+    font-size: 16px;
+}
+
+.search-form input[type="search"]::placeholder {
+    color: #999;
+}
+
+.search-form button {
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    background-color: #000;
+    transition: background-color 0.3s;
+}
+
+.search-form button:focus {
+    outline: none;
+}
+
+
+@media (max-width: 600px) {
+    .search-form {
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .search-form input[type="search"],
+    .search-form button {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .search-form button {
+        border-radius: 0 0 50px 50px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    header nav {
+        display: flex;justify-content: space-evenly;
+    }
+
+    .nav-bar {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        height: 100vh;
+        right: -100%;
+        transition: all 0.5s;
+        /* background-color: #fff; */
+        z-index: 100000;
+        backdrop-filter: blur(10px);
+        width: 100%;
+    }
+
+    .nav-bar li {
+        margin: 20px;
+    }
+
+    .title {
+        display: flex;
+        justify-content: start;
+    }
+
+    .menu {
+        display: block;
+        font-size: 20px;
+        cursor: pointer;
+        position: absolute;
+        right: 30px;
+        z-index: 100001;
+    }
+
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .ct-form {
+        margin: 0;
+    }
+
+    .ct-form div,
+    .ct-form input,
+    select {
+        width: 100%;
+    }
+
+    .ct-check {
+        width: 100%;
+    }
+
+    .select-trie {
+        display: flex;
+        flex-direction: column;
+    }
+    .select-trie label {
+        width: 100%;
+        font-size: 15px;
+    }
+    .select-trie select {
+        width: 100%;
+    }
+}
